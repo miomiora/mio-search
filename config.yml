@@ -1,0 +1,34 @@
+name: mio-search
+mode: dev
+port: 90
+version: v0.0.1
+start_time: "2023-04-11"
+
+log:
+  level: debug
+  filename: mio-search.log
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  host: 127.0.0.1
+  port: 92
+  user: search
+  password: 123321
+  dbname: mio-search
+  max_open_conn: 200
+  max_idle_conn: 50
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  db: 0
+  pool_size: 100
+  password:
+
+elasticsearch:
+  host: 127.0.0.1
+  port: 9200
+  user:
+  password:
